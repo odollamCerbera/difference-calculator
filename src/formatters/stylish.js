@@ -33,10 +33,8 @@ const stylish = (difference) => {
           throw new Error(`Incorrect type: ${node.type}.`)
       }
     })
-
     return result.join('\n')
   }
-
   return `{\n${iter(difference)}\n}`
 }
 

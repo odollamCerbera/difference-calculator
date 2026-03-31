@@ -1,5 +1,4 @@
 import globals from 'globals'
-
 import path from 'path'
 import { fileURLToPath } from 'url'
 import { FlatCompat } from '@eslint/eslintrc'
@@ -35,6 +34,7 @@ export default [
   ...compat.extends('airbnb-base'),
   {
     rules: {
+      'arrow-parens': ['error', 'as-needed'],
       'no-underscore-dangle': [
         'error',
         {

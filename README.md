@@ -1,8 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/odollamCerbera/frontend-project-46/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/odollamCerbera/frontend-project-46/actions)
-[![example workflow](https://github.com/odollamCerbera/frontend-project-46/actions/workflows/nodejs.yml/badge.svg)](https://github.com/odollamCerbera/frontend-project-46/actions/workflows/nodejs.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/d770fa79fd535cae76d3/maintainability)](https://codeclimate.com/github/odollamCerbera/frontend-project-46/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/d770fa79fd535cae76d3/test_coverage)](https://codeclimate.com/github/odollamCerbera/frontend-project-46/test_coverage)
+
 
 # Проект утилиты - "Вычислитель отличий"
 
@@ -38,6 +36,6 @@ gendiff -h
 
 ### Демонстрация использования gendiff
 
-1. [Генерация разницы между двумя файлами .json;](https://skr.sh/vSA4CSELjYw "Генерация разницы между двумя файлами .json")
-2. [Генерация разницы между двумя файлами .yaml;](https://skr.sh/vSAkfLMW1lm "Генерация разницы между двумя файлами .yaml")
+1. [Генерация разницы между двумя файлами .json](https://skr.sh/vSA4CSELjYw "Генерация разницы между двумя файлами .json")
+2. [Генерация разницы между двумя файлами .yaml](https://skr.sh/vSAkfLMW1lm "Генерация разницы между двумя файлами .yaml")
 3. [Генерация разницы между двумя файлами .yml](https://skr.sh/vSACpXqgT1a "Генерация разницы между двумя файлами .yml")
