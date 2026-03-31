@@ -1,35 +1,35 @@
-import _ from 'lodash';
+import _ from 'lodash'
 
 const getValue = (value) => {
-  if (_.isPlainObject(value)) return '[complex value]';
-  if (typeof value === 'string') return `'${value}'`;
+  if (_.isPlainObject(value)) return '[complex value]'
+  if (typeof value === 'string') return `'${value}'`
 
-  return value;
-};
+  return value
+}
 
 const stringify = (node, parent = '') => {
   switch (node.type) {
     case 'nested':
-      return node.children.map((item) => stringify(item, `${parent}${node.key}.`))
-        .filter((value) => value !== null).join('\n');
+      return node.children.map(item => stringify(item, `${parent}${node.key}.`))
+        .filter(value => value !== null).join('\n')
     case 'added':
-      return `Property '${parent}${node.key}' was added with value: ${getValue(node.value)}`;
+      return `Property '${parent}${node.key}' was added with value: ${getValue(node.value)}`
     case 'removed':
-      return `Property '${parent}${node.key}' was removed`;
+      return `Property '${parent}${node.key}' was removed`
     case 'unchanged':
-      return null;
+      return null
     case 'changed':
-      return `Property '${parent}${node.key}' was updated. From ${getValue(node.value1)} to ${getValue(node.value2)}`;
+      return `Property '${parent}${node.key}' was updated. From ${getValue(node.value1)} to ${getValue(node.value2)}`
     default:
-      throw new Error(`Incorrect type: ${node.type}.`);
+      throw new Error(`Incorrect type: ${node.type}.`)
   }
-};
+}
 
 const plain = (difference) => {
-  const result = difference.map((node) => stringify(node))
-    .filter((line) => line !== null);
+  const result = difference.map(node => stringify(node))
+    .filter(line => line !== null)
 
-  return result.join('\n');
-};
+  return result.join('\n')
+}
 
-export default plain;
+export default plain

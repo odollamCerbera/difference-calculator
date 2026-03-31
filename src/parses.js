@@ -1,16 +1,16 @@
-import yaml from 'js-yaml';
+import yaml from 'js-yaml'
 
 const parseFile = (filePath, format) => {
   switch (format) {
     case '.json':
-      return JSON.parse(filePath);
+      return JSON.parse(filePath)
     case '.yaml':
-      return yaml.load(filePath);
+      return yaml.load(filePath)
     case '.yml':
-      return yaml.load(filePath);
+      return yaml.load(filePath)
     default:
-      throw new Error(`Incorrect format: '${format}'`);
+      throw new Error(`Incorrect format: '${format}'`)
   }
-};
+}
 
-export default parseFile;
+export default parseFile

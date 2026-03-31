@@ -1,18 +1,18 @@
-import json from './json.js';
-import plain from './plain.js';
-import stylish from './stylish.js';
+import json from './json.js'
+import plain from './plain.js'
+import stylish from './stylish.js'
 
 const defineFormatter = (difference, format = 'stylish') => {
   switch (format) {
     case 'json':
-      return json(difference);
+      return json(difference)
     case 'plain':
-      return plain(difference);
+      return plain(difference)
     case 'stylish':
-      return stylish(difference);
+      return stylish(difference)
     default:
-      throw new Error(`Invalid format: ${format}`);
+      throw new Error(`Invalid format: ${format}`)
   }
-};
+}
 
-export default defineFormatter;
+export default defineFormatter
